@@ -1,0 +1,15 @@
+services:
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+
+  hazelcast:
+    image: hazelcast/hazelcast:3.12.12
+    ports:
+      - "5701:5701"
+
+  mongo:
+    image: mongo:7.0
+    ports:
+      - "27017:27017"
